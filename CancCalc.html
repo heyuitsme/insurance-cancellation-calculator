@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- HTML for cancellation calculator -->
+
+<html>
+<head>
+
+<script src="CancCalc.js"></script>
+<link rel="stylesheet" type="text/css" href="CancCalc.css">
+
+<title>Early Cancellation Calculator</title>
+</head>
+
+<body>
+
+  <div class="cancellationCalc">
+
+    <a href="https://insurancehotline.com"><img src="IHfull.png" id="calendarImage" alt="calendar placeholder"></a>
+
+    <h2>Early Cancellation Fee Calculator</h2><br />
+
+    <form id="mainForm">
+      Name <br />
+      <input required type="text" id="nameInput" placeholder="Enter your name" oninvalid="this.setCustomValidity('Please select an option')"
+      oninput="setCustomValidity('')"/> <br /><br />
+
+      When do you want your new policy to start? <br />
+      <input required type="date" id="startDateInput" min="2017-09-01"/> <br /><br />
+
+      When does your current policy expire? <br />
+      <input required type="date" id="endDateInput" min="2017-09-01"/> <br /><br />
+
+      What is your current premium? <br />
+      <input required type="number" min="0" id="premiumInput" placeholder="2000"/> <br /><br />
+
+      Did you enter a monthly or annual premium? <br />
+      <select required id="selectInput" name="selection" >
+        <option disabled selected value> -- Select an Option -- </option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annual</option>
+      </select> <br /><br />
+
+      <!--oninvalid="this.setCustomValidity('Please select an option')"
+      oninput="setCustomValidity('')"-->
+      <input type="button" onclick="calcDiff()" value="Calculate!" id="calculateButton"/>
+      <a href="https://insurancehotline.com"><input type="button" value="Get a Quote" id="getQuote"/></a><br />
+
+    </form>
+
+
+
+    <b><p id="message"></p></b>
+    <b><p id="messageVal"></p></b>
+    <p id="disclaimer">
+      *Please note that calculated value is an estimate only. For a more accurate cancellation fee, please contact your insurance provider.
+      InsuranceHotline.com is not responsible for any discrepancies between the calculated value and actual cancellation fee.
+    </p>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/* CSS file for cancellation calculator */
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+:-ms-input-placeholder {
+   text-align: center;
+}
+#startDateInput {
+  text-align: center;
+}
+#endDateInput {
+  text-align: center;
+}
+
+.cancellationCalc {
+  border: 4px solid #1577a1;
+  width: 500px;
+  margin: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#calendarImage {
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #1577a1;
+  font-size: 1.3em;
+}
+
+#nameInput, #startDateInput, #endDateInput, #premiumInput {
+  color: #333;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border-color: #cccccc;
+  border-style: solid;
+}
+
+#selectInput {
+  color: #333;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border-color: #cccccc;
+  border-style: solid;
+}
+
+#message {
+  color: #1577a1;
+  font-size: 1.3em;
+}
+
+#messageVal {
+  color: #1577a1;
+  font-size: 2.2em;
+}
+
+#calculateButton, #getQuote {
+  color: #1577a1;
+  border: #1577a1 solid;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+#calculateButton:hover, #getQuote:hover {
+  color: #ffffff;
+  border: #1577a1 solid;
+  border-radius: 5px;
+  background-color: #1577a1;
+}
+
+
+#disclaimer {
+  font-size: 0.5em;
+  color: #e7e7e7;
+}
